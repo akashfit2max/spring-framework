@@ -12,16 +12,16 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd
     ">
 
-	
+	<context:annotation-config />
 
-	<bean class="com.springcore.autowire.Address" name="addres"
-		p:street="IAF Road" p:city="chennai" />
-		
-		<bean class="com.springcore.autowire.Address" name="address2"
-		p:street="IAF Road" p:city="Goa" />
-		
-	<bean class="com.springcore.autowire.Employee" name="emp1"
-	autowire="byName" />
-	
+	<bean class="com.springcore.autowire.anotation.Address"
+		name="tempaddress" p:street="IAF Road" p:city="chennai" />
+
+	<bean class="com.springcore.autowire.Address" name="address2"
+		p:street="IAF 
+		Road" p:city="Goa" />
+	<bean class="com.springcore.autowire.anotation.Employee"
+		name="emp1" />
+
 
 </beans>
