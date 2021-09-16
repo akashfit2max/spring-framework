@@ -12,8 +12,12 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd
     ">
 
-	<bean class="com.springcore.lifecycle.Pepsi" name="pepsi"
-		p:price="50">
-	</bean>
+	<context:annotation-config />  <!-- enable annotation -->
+
+	<!-- <bean class="com.springcore.lifecycle.Pepsi" name="pepsi" p:price="50"> 
+		</bean> -->
+
+	<bean class="com.springcore.lifecycle.Course" name="c"
+		p:subject="maths"></bean>
 
 </beans>

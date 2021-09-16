@@ -9,9 +9,12 @@ public class Mytest {
 		// TODO Auto-generated method stub
 
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
-		Pepsi pepsi = (Pepsi) context.getBean("pepsi");
-		System.out.println(pepsi);
+//		Pepsi pepsi = (Pepsi) context.getBean("pepsi");
+//		System.out.println(pepsi);
 		context.registerShutdownHook();
+
+		Course course = (Course) context.getBean("c");
+		System.out.println(course);
 
 	}
 
