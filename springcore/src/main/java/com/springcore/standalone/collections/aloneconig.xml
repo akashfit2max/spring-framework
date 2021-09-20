@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+     http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    ">
+
+	<!-- standalone collection -->
+
+	<util:list list-class="java.util.LinkedList" id="myfriends">
+		<value>akash</value>
+		<value>ashish</value>
+		<value>ankit</value>
+		<value>rohit</value>
+	</util:list>
+
+	<util:map map-class="java.util.HashMap" id="myfees">
+		<entry key="Spring Framework" value="2000" />
+		<entry key="Danjo Framework" value="200780" />
+		<entry key="Hibernate Framework" value="20200" />
+	</util:map>
+
+	<util:properties id="prop">
+		<prop key="name">akash</prop>
+		<prop key="password">ask123</prop>
+		<prop key="email">akashnikz@gmail.com</prop>
+	</util:properties>
+
+
+	<bean class="com.springcore.standalone.collections.Person"
+		name="person">
+		<property name="friends" ref="myfriends" />
+		<property name="fees" ref="myfees" />
+		<property name="properties" ref="prop"></property>
+	</bean>
+
+
+</beans>
