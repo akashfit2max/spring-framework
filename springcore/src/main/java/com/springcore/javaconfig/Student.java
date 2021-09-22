@@ -1,16 +1,28 @@
 package com.springcore.javaconfig;
 
-import org.springframework.beans.factory.annotation.Value;
-
 //@Component
 
 public class Student {
 
-	@Value(value = "akash")
-	private String name;
+	private Samosa samosa;
 
-	@Value("#{12}")
+	public Student(Samosa samosa, String name, int id) {
+		super();
+		this.samosa = samosa;
+		this.name = name;
+		this.id = id;
+	}
+
+	private String name;
 	private int id;
+
+	public Samosa getSamosa() {
+		return samosa;
+	}
+
+	public void setSamosa(Samosa samosa) {
+		this.samosa = samosa;
+	}
 
 	public String getName() {
 		return name;
@@ -28,9 +40,14 @@ public class Student {
 		this.id = id;
 	}
 
+	public void study() {
+		System.out.println("studying");
+		this.samosa.display();
+	}
+
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", id=" + id + "]";
+		return "Student [samosa=" + samosa + ", name=" + name + ", id=" + id + "]";
 	}
 
 }

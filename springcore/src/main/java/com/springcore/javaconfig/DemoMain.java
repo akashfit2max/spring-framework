@@ -9,7 +9,9 @@ public class DemoMain {
 		// TODO Auto-generated method stub
 		ApplicationContext context = new AnnotationConfigApplicationContext(JavaConfig.class);
 		Student student = context.getBean("stu", Student.class);
+		System.out.println(student.getSamosa());
 		System.out.println(student);
+		student.study();
 	}
 
 }
