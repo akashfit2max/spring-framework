@@ -13,6 +13,7 @@ public class Test {
 		System.out.println(student);
 
 //		singelton rheta h hamesha jitne baar object call kro same hashcode aaega
+//		@scope use kr skte ho 
 
 		Student student2 = context.getBean("student", Student.class);
 		System.out.println(student.hashCode());
