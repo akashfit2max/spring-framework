@@ -1,9 +1,9 @@
 package com.springcore.javaconfig;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
-@Component("firststudent")
+//@Component
+
 public class Student {
 
 	@Value(value = "akash")
