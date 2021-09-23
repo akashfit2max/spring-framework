@@ -1,5 +1,6 @@
 package com.springcore.autowire.anotation;
 
+// this is address class
 public class Address {
 	private String street;
 	private String city;
