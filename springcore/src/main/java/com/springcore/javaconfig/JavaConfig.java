@@ -14,7 +14,7 @@ public class JavaConfig {
 
 //	without using component scan on the class 
 //	if u dnt give name is the @bean annotation it will take the name of the method i.e getStudent
-	@Bean(name = "stu")
+	@Bean(name = { "stu", "temp", "aks" })
 	public Student getStudent() {
 		return new Student(getSamosa(), "akash", 12);
 	}
