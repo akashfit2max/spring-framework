@@ -22,7 +22,6 @@ public class Course {
     }
 
 //	@PostConstruct    
-
 //    annotation laga doge thoo xml me config ki koi zaroorrat nai h
     public void start() {
 	System.out.println("starting method");
