@@ -1,38 +1,35 @@
 package com.springcore.lifecycle;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-
 public class Course {
-	private String subject;
+    private String subject;
 
-	public String getSubject() {
-		return subject;
-	}
+    public String getSubject() {
+	return subject;
+    }
 
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
+    public void setSubject(String subject) {
+	this.subject = subject;
+    }
 
-	public Course() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    public Course() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
 
-	@Override
-	public String toString() {
-		return "Course [subject=" + subject + "]";
-	}
+    @Override
+    public String toString() {
+	return "Course [subject=" + subject + "]";
+    }
 
-	@PostConstruct
-	public void start() {
-		System.out.println("starting method");
-	}
+//	@PostConstruct    
+//    annotation laga doge thoo xml me config ki koi zaroorrat nai h
+    public void start() {
+	System.out.println("starting method");
+    }
 
-	@PreDestroy
-	public void end() {
-		System.out.println("ending method");
-	}
+//	@PreDestroy
+    public void end() {
+	System.out.println("ending method");
+    }
 
 }
