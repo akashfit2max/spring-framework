@@ -2,28 +2,19 @@ package com.springcore.autowire;
 
 public class Employee {
 
-	private Address addres;
+	private Address addres2;
+
+	public Address getAddres2() {
+		return addres2;
+	}
+
+	public void setAddres2(Address addres2) {
+		this.addres2 = addres2;
+	}
 
 	@Override
 	public String toString() {
-		return "Employee [addres=" + addres + "]";
+		return "Employee [addres2=" + addres2 + "]";
 	}
 
-	public Employee(Address addres) {
-		super();
-		this.addres = addres;
-	}
-
-	public Employee() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Address getAddres() {
-		return addres;
-	}
-
-	public void setAddres(Address addres) {
-		this.addres = addres;
-	}
 }

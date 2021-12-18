@@ -17,7 +17,7 @@
 	<bean class="com.springcore.autowire.Address" name="addres"
 		p:street="IAF Road" p:city="chennai" />
 		
-		<bean class="com.springcore.autowire.Address" name="address2"
+		<bean class="com.springcore.autowire.Address" name="addres2"
 		p:street="IAF Road" p:city="Goa" />
 		
 	<bean class="com.springcore.autowire.Employee" name="emp1"
