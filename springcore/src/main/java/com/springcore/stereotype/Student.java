@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+// @Component("obj")  ab yehi nam edena h get bean me
 @Scope("prototype")
 public class Student {
 
